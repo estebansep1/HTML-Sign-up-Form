@@ -12,16 +12,80 @@
     </nav>
     <main>
         <h2>Vacation Contest Sign-Up Form</h2>
-        <form> <!-- TODO: Set Action and Method Properties -->
+        <form action="/action_page.php" method="get">
+          
             <div>
                 <label for="firstname">Your First Name</label>
                 <input type="text" id="firstname" name="firstname">
                 <!-- TODO: Create a "lastname" input with type "text" -->
+                <input type="text" id="firstname" name="firstname">
+                <span class="required-field">*</span>
+
             </div>
             <!-- TODO: Make fieldset and legend -->
-            <!-- Todo: Email Input -->
-            <!-- Todo: Street Address Input -->
-            <!-- Todo: City, State, and Zip Inputs -->
+<fieldset>
+  <legend>Personal Info:</legend>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday"><br><br>
+  <label for="address">Street address:</label>
+  <input type="text" id="address" name="address"><br></br>
+  <label for="city">City:</label>
+  <input type="text" id="city" name="city"><br></br>
+  <label for="state">State:</label>
+  <input type="text" id="state" name="state"><br></br>
+  <label for="zip">Zip code:</label>
+  <input type="text" id="zip" name="zip"><br></br>
+  <input type="submit" value="Submit">
+ </fieldset>
+        
+            
+<fieldset>
+         <legend>Your Preferences</legend>
+                <h3>Choose your location</h3>
+                <div>
+                    <input type="radio" id="aruba" name="location" value="Aruba" checked> 
+                    <label for="aruba">Aruba</label>
+                </div>
+                <div>
+                    <input type="radio" id="japan" name="location" value="Japan"> 
+                    <label for="japan">Japan</label>
+                </div>
+                <div>
+                    <input type="radio" id="reykjavik" name="location" value="Reykjavik"> 
+                    <label for="reykjavik">Reykjavik</label>
+                </div>
+                <div>
+                    <input type="radio" id="new-zealand" name="location" value="New Zealand"> 
+                    <label for="new-zealand">New Zealand</label>
+                </div>
+                <div>
+                    <label for="color">Favorite Color</label>
+                    <input type="color" id="color" name="color">
+                </div>
+                <h3>Please select any add-ons you'd like:</h3>
+                <div>
+                    <input type="checkbox" id="sauna" name="extras" value="Sauna Access" checked> 
+                    <label for="sauna">Sauna Access</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="hottub" name="extras" value="Hot Tub"> 
+                    <label for="hottub">In-Room Hot Tub</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="ocean" name="extras" value="Ocean View"> 
+                    <label for="ocean">Ocean View</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="drinks" name="extras" value="Drinks Package"> 
+                    <label for="drinks">All-inclusive Drinks Package</label>
+                </div>
+</fieldset>
 
             <!-- TODO: Second fieldset -->
             <!-- TODO: Radio buttons for selecting preferred destination -->
